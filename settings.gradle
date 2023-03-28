@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io"
+            allowInsecureProtocol = true}
+        maven { url "http://jcenter.bintray.com"
+            allowInsecureProtocol = true}
+        maven {
+            url "https://maven.google.com"
+            allowInsecureProtocol = true}
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io"
+            allowInsecureProtocol = true}
+        maven { url "http://jcenter.bintray.com"
+            allowInsecureProtocol = true}
+        maven {
+            url "https://maven.google.com"
+            allowInsecureProtocol = true}
+        jcenter()
+    }
+}
+rootProject.name = "CollegeHelper"
+include ':app'

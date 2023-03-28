@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="#FFFFFF"
+    android:elevation="5dp">
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="3dp"
+        android:text="Himanshu Gupta"
+        android:textColor="#E2000000" />
+
+    <TextView
+        android:id="@+id/nme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/uname"
+        android:text="(2020-2024)"
+        android:textColor="#E2403F3F" />
+
+    <ImageView
+        android:id="@+id/typeimg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/uname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/image5" />
+
+    <ImageView
+        android:id="@+id/open"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/uname"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/uname"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/typeimg"
+        android:text="Hydrodynamic lecture1.pdf"
+        android:textColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/dateup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/filename"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="2020-02-20"
+        android:textColor="#6A6A6A" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeimg"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Related Tags: "
+        android:id="@+id/ddd"
+        android:textColor="#535353" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:id="@+id/taghs"
+        android:layout_toRightOf="@id/ddd"
+        android:layout_toLeftOf="@id/dateup"
+        android:layout_below="@id/typeimg"
+        android:layout_marginTop="8dp"
+        android:text="Related Tags: "
+        android:textColor="#6A6A6A" />
+
+</RelativeLayout>

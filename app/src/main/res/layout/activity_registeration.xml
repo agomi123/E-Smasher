@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Registeration">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#EC0000"
+        android:id="@+id/a5"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/a4"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FCFDFD"
+        android:elevation="20dp"
+        app:cardCornerRadius="54dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/f2"
+                android:text="HELLO"
+                android:textColor="#5A5959"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/f3"
+                android:text="Smasher!"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/a4"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/l1"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Full Name"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:id="@+id/n1"
+            app:met_textColor="#000000"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Email Address"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter your emailaddress"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            android:id="@+id/n2"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Grduation Year"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter graduation year(20kk-20kk)"
+            android:inputType="date"
+            android:maxLength="10"
+            android:textColor="@color/black"
+            android:id="@+id/n3"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Branch In which you Are"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter the Branch in which you are"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:id="@+id/n4"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Mobile No"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter 10 digit Mobile No"
+            android:inputType="phone"
+            android:id="@+id/n5"
+            android:textColor="@color/black"
+            android:maxLength="10"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Grduating College"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/n6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter the Name of College"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            app:met_textColorHint="#90000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Password"
+            android:textColor="#E4000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter strong password(length>=6)"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:met_textColor="#000000"
+            android:id="@+id/n7"
+            app:met_textColorHint="#90000000" />
+        <LinearLayout
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:text="I am agree to "
+                android:textColor="#ADBAB8B8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Term and Conditions."
+                android:clickable="true"
+                android:onClick="tandc"
+                android:textColorLink="#FF5722"
+                android:textColor="#E80606"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnsignup"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#5accbe"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alreadyaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I`m already member"
+                    android:onClick="hello"
+                    android:textColor="#66272626"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#4C4C4C" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/a4"
+    android:layout_marginTop="30dp"
+    android:visibility="gone"
+    android:id="@+id/r1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/f2"
+        android:text="One Time Password sent on: -"
+        android:textColor="#4A4747"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/v6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/f2"
+        android:text="9898989898"
+        android:textColor="#FF5722"
+        android:textSize="19sp" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/v5"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="000000"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="#ffffff"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:lineColor="#656262"
+        android:layout_below="@id/v6"
+        app:lineWidth="2dp"
+        android:layout_centerHorizontal="true"
+        app:viewType="rectangle" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/v4"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/v2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#009688"
+        android:text="Verify Otp"
+        android:textColor="#ffffff"
+        app:cornerRadius="30dp" />
+
+</RelativeLayout>
+</RelativeLayout>

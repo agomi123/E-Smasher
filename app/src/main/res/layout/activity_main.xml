@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/p2"
+        app:lottie_rawRes="@raw/anim2"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lk"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sask"
+            android:layout_width="150dp"
+            android:onClick="meetme"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outline_edit_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toRightOf="@id/sask"
+            android:hint="Enter Something"
+            app:hintTextColor="#6A6A6A"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="#7E7C7C"
+            app:helperText="Enter in text format only">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipeRefreshLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lk"
+        android:layout_marginTop="8dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/sdsds"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:tint="@null"
+            android:backgroundTint="#06BFAE"
+            android:text="Upload"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_baseline_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#22B9FD"
+            app:tint="@color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_fab"
+            app:srcCompat="@drawable/ic_baseline_image" />
+        <TextView
+            android:id="@+id/add_alarm_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Upload Image"
+            android:textColor="#656565"
+            app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_alarm_fab" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_person_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#22B9FD"
+            app:fabSize="normal"
+            app:tint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+            app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+            app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24" />
+
+        <TextView
+            android:id="@+id/add_person_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Upload Pdf"
+            android:textColor="#787676"
+            app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/sdsds"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7925334082418787/9521103892">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ViewProfile">
+
+    <RelativeLayout
+        android:id="@+id/dkdk"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#F4F1F0">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:onClick="backplease"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_keyboard_backspace" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/namep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font7"
+            android:text="Username"
+            android:textColor="#F3F3F2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sasa"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/dkdk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:backgroundTint="#00BCD4"
+        app:cardCornerRadius="27dp">
+
+        <TextView
+            android:id="@+id/usp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/f1"
+            android:text="Meet The Smasher"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/dfj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sasa"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Account Info"
+        android:textColor="#706F6F"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dfj">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Name"
+                    android:textColor="#434343"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namepp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Himanshu Gupta"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Email Address"
+                    android:textColor="#555454"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emailp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="himanshugupta3385@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Mobile"
+                    android:textColor="#535353"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="7068633385"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Organisation"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orgp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="MMMUT"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Year"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/yr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="2020-2024"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Branch"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Computer Science And Engineering"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Block User"
+                    android:onClick="block"
+                    android:layout_margin="5dp"
+                    android:textColor="#F44336"/>
+                  <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report User"
+                      android:onClick="report"
+                      android:layout_margin="5dp"
+                    android:textColor="#F44336"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
